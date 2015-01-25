@@ -1,3 +1,4 @@
+
 ### python2.7 print something to file
 	f = open('filename', 'a+')
 	print >> f, 'something'
@@ -24,3 +25,14 @@ we can also add multi mode, like behind:
 
 	f=open('filename', 'a+r+w')
 	if 'a' and 'w' all use, 'a' will ingore 'w'
+	
+### python read
+	* f=open('filename')
+	* f.read() # read all
+	* f.readline() # read line by line
+	* f.readlines() #get a list
+	
+	* f=open('filename', 'rb')
+	* f.read(10) #read 10 byte per time
+
+
