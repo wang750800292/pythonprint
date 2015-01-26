@@ -25,3 +25,27 @@ def f4(x):
 f=f3(10)
 print 'f4:', f(2)
 ##########
+def f5():
+	global num
+	num = 0
+	def f(name):
+		global num
+		print num, name
+		num += 1
+	return f
+f=f5()
+print 'f5:', f('wang')
+print 'f5:', f('teng')
+print 'f5:', f('fei')
+##########
+class C1(object):
+	"""docstring for C1"""
+	def __init__(self, arg):
+		super(C1, self).__init__()
+		self.arg = arg
+	def f(self, name):
+		print self.arg, name
+		self.arg += 1
+c=C1(10)
+print 'C1:', c.f('wang')
+##########
