@@ -49,6 +49,7 @@ class C1(object):
 c=C1(10)
 print 'C1:', c.f('wang')
 ##########
+<<<<<<< HEAD
 
 # num = 1
 # def add_num():
